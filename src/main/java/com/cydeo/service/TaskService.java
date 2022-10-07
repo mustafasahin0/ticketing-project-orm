@@ -15,4 +15,8 @@ public interface TaskService {
     void delete(Long id);
 
     void update(TaskDTO dto);
+
+    int totalNonCompletedTask(String projectCode);
+
+    int totalCompletedTask(String projectCode);
 }
